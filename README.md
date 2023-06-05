@@ -60,37 +60,62 @@ D7 = X Y Z
 
 
 ### PROGRAM 
-/*
+```
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: Thirukaalathessvarar S
+RegisterNumber:  212222230161
+```
+```
+For ENCODER:
+module enc(a0,a1,a2,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a0,a1,a2;
+or(a0,y7,y5,y3,y1);
+or(a1,y7,y6,y3,y2);
+or(a2,y7,y6,y5,y4);
+endmodule
+```
 
+For DECODER:
+```
+module dec (a0,a1,a2,y0,y1,y2,y3,y4,y5,y6,y7);
+input a0,a1,a2;
+output y0,y1,y2,y3,y4,y5,y6,y7;
+wire a0bar,a1bar,a2bar;
+not(a0bar,a0);
+not(a1bar,a1);
+not(a2bar,a2);
+and(y0,a0bar,a1bar,a2bar);
+and(y1,a0,a1bar,a2bar);
+and(y2,a0bar,a1,a2bar);
+and(y3,a0,a1,a2bar);
+and(y4,a0bar,a1bar,a2);
+and(y5,a0,a1bar,a2);
+and(y6,a0bar,a1,a2);
+and(y7,a0,a1,a2);
+endmodule
+```
 
+## RTL LOGIC
+### For Encoder
+![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/566216da-6c7b-4e2d-beb5-4195cf4ade94)
 
+### For Decode
+![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/f5c0f64a-e4c6-4e90-8b35-0643ca694c39)
 
+## TIMING DIGRAMS  
+### For Encoder
+![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/79f33817-3e01-4fe8-8819-98f840d59192)
 
+### For Decode
+![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/8f22e8c1-4080-4317-8d8b-9adc63762dc8)
 
-### RTL LOGIC  
+## TRUTH TABLE 
+### For Encoder
+![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/97739daf-35de-4925-a1b2-e8181ebf50f3)
 
+### For Decoder
+![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/09b50642-7746-447e-b32d-96263c4a3ef1)
 
-
-
-
-
-
-
-### TIMING DIGRAMS  
-
-
-
-
-
-### TRUTH TABLE 
-
-
-
-
-
-
-### RESULTS 
+## RESULTS 
+Thus the program to desing encoder and decoder is completed.
