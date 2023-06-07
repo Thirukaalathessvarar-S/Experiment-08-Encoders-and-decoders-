@@ -115,7 +115,7 @@ endmodule
 ![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/97739daf-35de-4925-a1b2-e8181ebf50f3)
 
 ### For Decoder
-![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/09b50642-7746-447e-b32d-96263c4a3ef1)
+![image](https://github.com/Thirukaalathessvarar-S/Experiment-08-Encoders-and-decoders-/assets/121166390/e01e0af1-4f2b-4f35-83d4-23bac396819c)
 
 ## RESULTS 
 Thus the program to desing encoder and decoder is completed.
